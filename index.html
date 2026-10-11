@@ -4,20 +4,65 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>app.ly privacy policy</title>
+<meta name="description" content="What the app.ly Chrome extension keeps, where it goes, and what never leaves your browser.">
 <style>
-  body { max-width: 680px; margin: 48px auto; padding: 0 20px; font: 17px/1.6 system-ui, sans-serif; color: #1f1f23; }
-  h1 { font-size: 30px; margin-bottom: 24px; }
-  a { color: #1a56c4; }
-  @media (prefers-color-scheme: dark) { body { background: #16171b; color: #e8e8ec; } a { color: #8ab4f8; } }
+  :root { color-scheme: light dark; --bg: #fff; --ink: #0d0d0d; --ink2: #424242; --mut: #6b6b6b; --card: #f9f9f9; --line: rgba(0,0,0,.1); --soft: #f3f3f3; --link: #0169cc; --ok: #15803d;
+    --grad: linear-gradient(135deg, #4796e3 0%, #9177c7 55%, #ca6673 100%); }
+  @media (prefers-color-scheme: dark) { :root { --bg: #212121; --ink: #ececec; --ink2: #c4c4c4; --mut: #9b9b9b; --card: #282828; --line: rgba(255,255,255,.1); --soft: #303030; --link: #7ab7ff; --ok: #4ade80; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI Variable Text", "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  main { max-width: 680px; margin: 0 auto; padding: 28px 20px 72px; }
+  .brand { display: inline-flex; align-items: baseline; font-weight: 700; letter-spacing: -.035em; font-size: 20px; line-height: 1; margin-bottom: 36px; }
+  .brand i { display: inline-block; width: .3em; height: .3em; margin: 0 .06em; border-radius: 50%; background: var(--grad); }
+  h1 { font-size: clamp(28px, 5vw, 36px); line-height: 1.15; letter-spacing: -.025em; font-weight: 650; margin: 0 0 10px; }
+  h2 { font-size: 19px; line-height: 1.3; letter-spacing: -.015em; font-weight: 650; margin: 36px 0 8px; }
+  p { margin: 10px 0; } ul { padding-left: 20px; margin: 10px 0; } li { margin: 6px 0; } li::marker { color: var(--mut); }
+  a { color: var(--link); text-underline-offset: 3px; } b { font-weight: 600; }
+  .lead { font-size: 17px; color: var(--ink2); margin: 0; }
+  .meta { color: var(--mut); font-size: 13.5px; margin: 12px 0 0; }
+  .glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 28px 0 0; }
+  .glance div { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+  .glance b { display: flex; align-items: center; gap: 8px; font-size: 14px; margin-bottom: 4px; }
+  .glance b::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ok); flex: none; }
+  .glance div:nth-child(2) b::before { background: var(--grad); }
+  .glance p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--ink2); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--mut); font-size: 13.5px; }
 </style>
 </head>
 <body>
-<h1>app.ly privacy policy</h1>
+<main>
+<div class="brand" aria-label="app.ly">app<i></i>ly</div>
+<h1>Privacy policy</h1>
+<p class="lead">What the app.ly Chrome extension keeps, where it goes, and what never leaves your browser.</p>
+<p class="meta">Last updated 11 October 2026</p>
+
+<div class="glance">
+<div><b>On your computer</b><p>Your profile, resume, learned answers, drafts and AI keys, in your browser's own storage.</p></div>
+<div><b>To the AI you choose</b><p>Only the text a request needs, sent straight from your browser with your own key.</p></div>
+<div><b>Never</b><p>Sold, used for ads, or used for credit or lending decisions.</p></div>
+</div>
+
+<h2>What stays on your computer</h2>
 <p>app.ly stores your profile, learned answers, drafts and any AI provider API keys locally in your browser. This data is not sent to the app.ly developer or stored on an app.ly server.</p>
-<p>The extension reads the form on the page you choose to fill and fills it from your saved profile. Page contents are not recorded or transmitted to the developer.</p>
-<p>If you use the AI assistant, the text needed for your request (for example parts of your profile or a job description) is sent directly from your browser to the AI provider you configured, using your own API key, under that provider's terms.</p>
-<p>If you use the optional account sign-in, your Google account identity is used to connect your browser to a relay that passes requests from your MCP app to your browser. The relay stores nothing.</p>
-<p>app.ly never submits an application, sends a message or email, or presses a payment button without your action. It does not sell your data, use it for advertising, or use it for credit or lending decisions. You can export or delete all data from the extension at any time.</p>
-<p>Contact: <a href="mailto:yaminichandrakj@gmail.com">yaminichandrakj@gmail.com</a></p>
+
+<h2>Pages you fill</h2>
+<p>The extension reads the form on the page you choose to fill and fills it from your saved profile. Page contents are not recorded or transmitted to the developer. Answers you type on job applications can be remembered to fill next time; anything learned by mistake goes to a Trash you can restore from or empty.</p>
+
+<h2>The AI assistant</h2>
+<p>If you use the AI assistant, the text needed for your request (for example parts of your profile or a job description) is sent directly from your browser to the AI provider you configured, using your own API key, under that provider's terms. Work authorisation, sponsorship, salary, self-identification and date of birth are never sent to a model.</p>
+
+<h2>Optional sign-in and AI apps</h2>
+<p>If you use the optional account sign-in, your Google account identity is used to connect your browser to a relay that passes requests from your AI app (such as Claude or ChatGPT) to your browser. The relay doesn't store what passes through it. An online backup is kept only if you make one, locked with your passphrase before it leaves your browser. The relay's own page says exactly what it sees and keeps: <a href="https://app-ly-relay.app-ly.workers.dev/privacy">relay privacy</a>.</p>
+
+<h2>What app.ly never does</h2>
+<p>app.ly never submits an application, sends a message or email, or presses a payment button without your action. AI apps can act in your browser only if you turn that on. It does not sell your data, use it for advertising, or use it for credit or lending decisions.</p>
+
+<h2>Your controls</h2>
+<p>You can export or delete all data from the extension at any time (Settings → Account &amp; data).</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:yaminichandrakj@gmail.com">yaminichandrakj@gmail.com</a></p>
+<footer>app.ly · a Chrome extension that fills job applications from your saved profile.</footer>
+</main>
 </body>
 </html>
